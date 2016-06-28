@@ -1,7 +1,7 @@
 <resources>
 
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
 
     </style>
 
@@ -13,8 +13,14 @@
     <style name="Gradient"  parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/gradient</item>
     </style>
-<style name="Gradien"  parent="Theme.AppCompat.NoActionBar">
+
+    <style name="Gradien"  parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/gradient</item>
+    </style>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">#3F51B5</item>
+        <item name="android:textColor">#FFFFFF</item>
     </style>
 
 </resources>

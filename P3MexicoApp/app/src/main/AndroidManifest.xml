@@ -20,9 +20,13 @@
         <activity
             android:name=".MainActivity"
             android:label="Main"
-            android:parentActivityName=".LoginActivity"/>
+            android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".LoginActivity"
-            android:label="Login"/>
+            android:label="Login" />
+        <activity android:name=".User" />
+        <activity android:name=".CheckIn"
+            android:parentActivityName=".MainActivity"/>
     </application>
+
 </manifest>

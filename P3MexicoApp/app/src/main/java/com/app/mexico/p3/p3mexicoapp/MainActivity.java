@@ -22,13 +22,14 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         toolbar = (Toolbar) findViewById(R.id.tool_bar); // Conectamos el Layout al objeto Toolbar
 
         // Configuración de la barra de herramientas (toolbar ) como la Barra de acciones (ActionBar)
         // con la llamada de setSupportActionBar ()
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
         bCheckin = (Button) findViewById(R.id.checkin);
         bCheckin.setOnClickListener(this);

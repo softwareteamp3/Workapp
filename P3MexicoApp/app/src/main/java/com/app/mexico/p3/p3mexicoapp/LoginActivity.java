@@ -22,12 +22,9 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
 
     @Override
     public void onClick(View v) {
-
-        switch (v.getId()) {
-            case R.id.button:
                 Intent iMain = new Intent(this, MainActivity.class);
                 startActivity(iMain);
-        }
+
 
     }
 }

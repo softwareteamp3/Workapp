@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.app.mexico.p3.p3mexicoapp.MainActivity">
 
     <include
         android:id="@+id/tool_bar"
         android:layout="@layout/tool_bar"
         ></include>
+
 
     <TextView
         style="@style/my_style"

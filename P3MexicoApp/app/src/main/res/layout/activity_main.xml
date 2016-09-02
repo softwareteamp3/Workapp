@@ -5,26 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.app.mexico.p3.p3mexicoapp.MainActivity">
+    tools:context="com.app.mexico.p3.p3mexicoapp.MainActivity"
+    android:textAlignment="center">
 
     <include
         android:id="@+id/tool_bar"
-        android:layout="@layout/tool_bar"
-        ></include>
+        android:layout="@layout/tool_bar"></include>
 
 
     <TextView
-        style="@style/my_style"
-        android:text="Cetina!"
+        android:text="P3 Mexico App!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal" />
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        style="@style/style_buttons"
         android:id="@+id/checkin"
-        android:text="Check-In"/>
+        android:text="Check In"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <Button
+        style="@style/style_buttons"
+        android:id="@+id/customer"
+        android:text="@string/Customer"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
 
 </LinearLayout>

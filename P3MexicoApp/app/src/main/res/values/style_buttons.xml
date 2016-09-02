@@ -1,0 +1,11 @@
+<resources>
+    <style name="style_buttons">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">#536DFE</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+</resources>

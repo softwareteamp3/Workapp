@@ -25,8 +25,21 @@
             android:name=".LoginActivity"
             android:label="Login" />
         <activity android:name=".User" />
-        <activity android:name=".CheckIn"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".CheckIn"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Customer"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Revision"
+            android:parentActivityName=".CheckIn" />
+        <activity
+            android:name=".Export"
+            android:parentActivityName=".CheckIn" />
+        <activity
+            android:name=".Statistics"
+            android:parentActivityName=".CheckIn" />
     </application>
 
 </manifest>

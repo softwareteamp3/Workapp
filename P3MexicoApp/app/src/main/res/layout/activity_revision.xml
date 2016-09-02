@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Check In"
+        android:text="Revision"
         android:textSize="20dp"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
@@ -23,7 +23,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Registers"
+        android:text="Name"
         android:id="@+id/registros"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp" />
@@ -31,24 +31,8 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Revision"
+        android:text="ID"
         android:id="@+id/revision"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
-
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Export"
-        android:id="@+id/exportar"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
-
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Stadistics"
-        android:id="@+id/analisis"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"/>
 

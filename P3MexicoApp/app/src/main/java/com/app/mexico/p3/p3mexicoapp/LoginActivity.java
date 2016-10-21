@@ -15,13 +15,13 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        bMain = (Button) findViewById(R.id.button);
+        bMain = (Button) findViewById(R.id.button1);
 
         bMain.setOnClickListener(this);
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
                 Intent iMain = new Intent(this, MainActivity.class);
                 startActivity(iMain);
 

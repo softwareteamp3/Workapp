@@ -1,42 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e1e1e1"
     android:orientation="vertical"
-    tools:context="com.app.mexico.p3.p3mexicoapp.MainActivity"
-    android:textAlignment="center">
-
-    <include
-        android:id="@+id/tool_bar"
-        android:layout="@layout/tool_bar"></include>
-
+    android:scrollbarAlwaysDrawVerticalTrack="true">
 
     <TextView
-        android:text="P3 Mexico App!"
-        android:layout_width="wrap_content"
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_gravity="center_horizontal" />
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"
+        android:text="P3 México"
+        android:textColor="#666666"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
-    <Button
-        style="@style/style_buttons"
-        android:id="@+id/checkin"
-        android:text="Check In"
-        android:clickable="true"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <Button
-        style="@style/style_buttons"
-        android:id="@+id/customer"
-        android:text="@string/Customer"
-        android:clickable="true"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
 
-</LinearLayout>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#63B1E4"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:id="@+id/checkin"
+                android:text="Check In"
+                android:onClick="onClick"
+                android:drawableLeft="@drawable/user"
+                />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#63B1E4"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:id="@+id/customer"
+                android:text="@string/Customer"
+                android:onClick="onClick"
+                android:drawableLeft="@drawable/user"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/user_profile_image_background"
+        android:elevation="4dp"
+        android:src="@mipmap/logop3"/>
+</RelativeLayout>
+
+
